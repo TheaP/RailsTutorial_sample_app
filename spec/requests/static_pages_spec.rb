@@ -1,45 +1,29 @@
 require 'spec_helper'
 
 describe "StaticPages" do
+
+	subject { page }
   
 	describe "Home page" do
+		before { visit root_path }
 
-		it "should have the content 'Neonate Connect'" do
-			visit '/static_pages/home'
-			expect(page).to have_content('Neonate Connect')
-		end
-
-		it "should have the title 'Neonate Connect'" do
-			visit '/static_pages/home'
-			expect(page).to have_title('Neonate Connect | Home')
-		end
+		it { should have_content('Neonate Connect') }
+		it { should have_title(full_title('')) }
+		it { should_not have_title(' | Home') }
 	end	
 
-	describe "About" do
+	describe "About page" do
+		before { visit about_path }
 
-		it "should have the content 'About'" do
-			visit '/static_pages/about'
-			expect(page).to have_content('About')
-		end
-
-		it "should have the title 'About'" do
-			visit '/static_pages/about'
-			expect(page).to have_title('Neonate Connect | About')
-		end
-
+		it { should have_content('About') }
+		it { should have_title(full_title('About')) }
 	end
 
-	describe "Contact" do
+	describe "Contact page" do
+		before { visit contact_path }
 
-		it "should have the content 'Contact'" do
-			visit '/static_pages/contact'
-			expect(page).to have_content('Contact')
-		end
-
-		it "should have the title 'Contact Us'" do
-			visit '/static_pages/contact'
-			expect(page).to have_title('Neonate Connect | Contact Us')
-		end
+		it { should have_content('Contact') }
+		it { should have_title(full_title('Contact Us')) }
 	end
 
 end
