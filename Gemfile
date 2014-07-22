@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+<<<<<<< HEAD
 ruby '1.9.3'
 #ruby-gemset=railstutorial_rails_4_0
 
@@ -15,11 +16,27 @@ group :development, :test do
 	gem 'sqlite3', '1.3.8'
 	gem 'rspec-rails', '2.13.1'
 end
+=======
+'ruby' '1.9.3'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.0.0'
+
+group :development, :test do
+	gem 'sqlite3', '1.3.7'
+	gem 'rspec-rails', '2.13.1'
+end
+# Use sqlite3 as the database for Active Record
+# Compiled in development and test (see above)
+>>>>>>> 0b28430929ef35004b10ed6de08998e82bc89fa5
 
 group :test do
 	gem 'selenium-webdriver', '2.35.1'
 	gem 'capybara', '2.1.0'
+<<<<<<< HEAD
 	gem 'factory_girl_rails', '4.2.1'
+=======
+>>>>>>> 0b28430929ef35004b10ed6de08998e82bc89fa5
 end
 
 # Use SCSS for stylesheets

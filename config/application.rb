@@ -11,10 +11,15 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
+<<<<<<< HEAD
 module NeonateConnect
   class Application < Rails::Application
 	  # Make bootstrap-sass compatible with asset pipeline
 	  config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+=======
+module SampleApp
+  class Application < Rails::Application
+>>>>>>> 0b28430929ef35004b10ed6de08998e82bc89fa5
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

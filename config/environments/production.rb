@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 NeonateConnect::Application.configure do
+=======
+SampleApp::Application.configure do
+>>>>>>> 0b28430929ef35004b10ed6de08998e82bc89fa5
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -27,7 +31,11 @@ NeonateConnect::Application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
+<<<<<<< HEAD
   config.assets.compile = true 
+=======
+  config.assets.compile = false
+>>>>>>> 0b28430929ef35004b10ed6de08998e82bc89fa5
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -40,7 +48,11 @@ NeonateConnect::Application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
+<<<<<<< HEAD
   config.force_ssl = true
+=======
+  # config.force_ssl = true
+>>>>>>> 0b28430929ef35004b10ed6de08998e82bc89fa5
 
   # Set to :debug to see everything in the log.
   config.log_level = :info

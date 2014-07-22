@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 NeonateConnect::Application.configure do
+=======
+SampleApp::Application.configure do
+>>>>>>> 0b28430929ef35004b10ed6de08998e82bc89fa5
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
